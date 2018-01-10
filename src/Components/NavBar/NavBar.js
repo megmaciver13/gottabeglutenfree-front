@@ -11,9 +11,12 @@ class NavBar extends Component {
       <nav>
         <span className='home'>
           <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>Home</Link>
-        </span>
+        </span> |
         <span className='about'>
           <Link to='/'style={{ textDecoration: 'none', color: 'white' }}>About</Link>
+        </span> |
+        <span className='all'>
+          <Link to='/posts'style={{ textDecoration: 'none', color: 'white' }}>Recipe Archive</Link>
         </span>
       </nav>
     )

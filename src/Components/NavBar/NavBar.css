@@ -7,9 +7,13 @@ nav {
 }
 
 .home {
-  padding: 1%;
+  padding: 2%;
 }
 
 .about {
-  padding: 1%;
+  padding: 2%;
+}
+
+.all {
+  padding: 2%;
 }
