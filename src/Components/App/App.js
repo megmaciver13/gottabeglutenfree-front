@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import './App.css'
 
-import TitleLogo from '../TitleLogo/TitleLogo'
+import HeaderLogo from '../HeaderLogo/HeaderLogo'
 import NavBar from '../NavBar/NavBar'
 import FeatureArea from '../FeatureArea/FeatureArea'
 import Sidebar from '../Sidebar/Sidebar'
@@ -11,17 +11,11 @@ class App extends Component {
   render () {
     return (
       <div className='app'>
-        <div className='title-logo'>
-          <TitleLogo />
-        </div>
+        <HeaderLogo />
         <NavBar />
         <div className='main'>
-          <div className='feature-area'>
-            <FeatureArea />
-          </div>
-          <div className='sidebar'>
-            <Sidebar />
-          </div>
+          <FeatureArea />
+          <Sidebar />
         </div>
       </div>
     )

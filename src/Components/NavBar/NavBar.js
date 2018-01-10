@@ -10,10 +10,10 @@ class NavBar extends Component {
     return (
       <nav>
         <span className='home'>
-          <Link to='/'>Home</Link>
+          <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>Home</Link>
         </span>
         <span className='about'>
-          <Link to='/'>About</Link>
+          <Link to='/'style={{ textDecoration: 'none', color: 'white' }}>About</Link>
         </span>
       </nav>
     )

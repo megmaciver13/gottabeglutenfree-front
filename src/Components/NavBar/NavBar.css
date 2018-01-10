@@ -1,3 +1,11 @@
+nav {
+  background-color: #566282;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 14pt;
+  padding: 1%;
+}
+
 .home {
   padding: 1%;
 }
