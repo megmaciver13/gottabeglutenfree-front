@@ -11,7 +11,9 @@ class App extends Component {
   render () {
     return (
       <div className='app'>
-        <TitleLogo />
+        <div className='title-logo'>
+          <TitleLogo />
+        </div>
         <NavBar />
         <div className='main'>
           <div className='feature-area'>

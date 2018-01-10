@@ -9,7 +9,7 @@ class TitleLogo extends Component {
   render () {
     return (
       <div>
-        hello title logo
+        gottabeglutenfree
       </div>
     )
   }

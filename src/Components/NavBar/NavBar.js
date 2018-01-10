@@ -8,9 +8,14 @@ import './NavBar.css'
 class NavBar extends Component {
   render () {
     return (
-      <div>
-        hello nav bar
-      </div>
+      <nav>
+        <span className='home'>
+          <Link to='/'>Home</Link>
+        </span>
+        <span className='about'>
+          <Link to='/'>About</Link>
+        </span>
+      </nav>
     )
   }
 }
