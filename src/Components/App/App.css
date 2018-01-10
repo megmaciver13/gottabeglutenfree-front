@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.feature-area {
+  flex: 2;
+}
+
+.sidebar {
+  flex: 1;
+}
