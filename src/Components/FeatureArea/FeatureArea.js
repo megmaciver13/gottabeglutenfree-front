@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {
-  Redirect,
   Route,
   Switch
 } from 'react-router-dom'
@@ -8,6 +7,7 @@ import {
 import './FeatureArea.css'
 
 import RecentPostFeed from '../RecentPostFeed/RecentPostFeed'
+import PostIndex from '../PostIndex/PostIndex'
 import PostShow from '../PostShow/PostShow'
 
 class FeatureArea extends Component {
@@ -20,7 +20,11 @@ class FeatureArea extends Component {
             render={props => <RecentPostFeed {...props} />}
           />
           <Route
-            exact path='/posts/:title'
+            exact path='/posts'
+            component={PostIndex}
+          />
+          <Route
+            path='/posts/:title'
             render={props => <PostShow {...props} />}
           />
         </Switch>

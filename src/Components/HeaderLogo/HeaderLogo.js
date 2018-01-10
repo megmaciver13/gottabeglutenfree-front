@@ -9,9 +9,9 @@ class HeaderLogo extends Component {
   render () {
     return (
       <div className='header'>
-        {/* <Link to='/'> */}
-        <img src={require(`../../images/gottabeglutenfree-logo.png`)} alt='gottabeglutenfree-logo' />
-        {/* </Link> */}
+        <Link to='/'>
+          <img src={require(`../../images/gottabeglutenfree-logo.png`)} alt='gottabeglutenfree-logo' />
+        </Link>
       </div>
     )
   }
