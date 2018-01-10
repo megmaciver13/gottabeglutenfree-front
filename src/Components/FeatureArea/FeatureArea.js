@@ -17,7 +17,7 @@ class FeatureArea extends Component {
         <Switch>
           <Route
             exact path='/'
-            render={props => <RecentPostFeed {...props} />}
+            component={RecentPostFeed}
           />
           <Route
             exact path='/posts'

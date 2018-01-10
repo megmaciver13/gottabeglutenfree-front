@@ -15,48 +15,36 @@ class PostIndex extends Component {
     }
   }
 
-  sortPostsAlphabetically (array) {
-    let sortedPosts = array.sort((a,b) => {
-      var itemA = a.title
-      var itemB = b.title
-
-      return (itemA < itemB) ? -1 : (itemA > itemB) ? 1 : 0
-    })
-
-    return sortedPosts
-  }
-
   componentDidMount () {
-    axios.get('http://localhost:3001/')
+    axios.get('http://localhost:3001/posts')
       .then(response => {
         console.log(response.data)
-        let sortedPosts = response.data.sort((a, b) => {
+        let sortedPostsAlphabetically = response.data.sort((a, b) => {
           var itemA = a.title
           var itemB = b.title
 
           return (itemA < itemB) ? -1 : (itemA > itemB) ? 1 : 0
         })
-        console.log(sortedPosts)
+        console.log(sortedPostsAlphabetically)
         this.setState({
-          posts: sortedPosts
+          posts: sortedPostsAlphabetically
         })
       })
       .catch(err => console.log(err))
   }
 
   render () {
-    let showPosts = this.state.posts.map((post, index) => {
+    let listAllPosts = this.state.posts.map((post, index) => {
       return (
         <div className={`post-${index}`}>
           <Link to={`/${post.title}`}>{post.title}</Link>
         </div>
       )
     })
-    console.log(showPosts)
     return (
       <div className='recipe-index'>
         <h1>All Recipes</h1>
-        {showPosts}
+        {listAllPosts}
       </div>
     )
   }
