@@ -8,7 +8,19 @@ li {
 
 .post-show {
   font-family: 'Lato', sans-serif;
+  color: #17253F;
   margin: 5%;
+}
+
+.edit {
+  text-align: right;
+  color: #17253F;
+}
+
+.edit-button {
+  margin: 1%;
+  border: 2pt solid #566282;
+  padding: 1%;
 }
 
 .post-images {

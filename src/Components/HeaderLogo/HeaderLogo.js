@@ -12,6 +12,7 @@ class HeaderLogo extends Component {
         <Link to='/'>
           <img src={require(`../../images/gottabeglutenfree-logo.png`)} alt='gottabeglutenfree-logo' />
         </Link>
+        <h4 className='tagline'>a celebration of delicious food sans gluten.</h4>
       </div>
     )
   }

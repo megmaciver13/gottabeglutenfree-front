@@ -27,8 +27,12 @@ class FeatureArea extends Component {
             component={PostIndex}
           />
           <Route
-            path='/posts/:title'
+            exact path='/posts/:title'
             component={PostShow}
+          />
+          <Route
+            path='/posts/:title/edit'
+            render={props => <EditPost {...props} />}
           />
           <Route
             path='/about'
@@ -36,11 +40,7 @@ class FeatureArea extends Component {
           />
           <Route
             path='/new'
-            component={NewPost}
-          />
-          <Route
-            path='/edit'
-            component={EditPost}
+            render={props => <NewPost {...props} />}
           />
         </Switch>
       </div>

@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import {
+  Link
+} from 'react-router-dom'
 import axios from 'axios'
 
 import './PostShow.css'
@@ -64,7 +67,10 @@ class PostShow extends Component {
     })
     return (
       <div className='post-show'>
-        <h2>{this.state.title}</h2>
+        <div className='edit'>
+          <Link to={`/posts/${this.state.title}/edit`} className='edit-button' style={{ textDecoration: 'none', color: '#566282' }}>Edit Post</Link>
+        </div>
+        <h1>{this.state.title}</h1>
         <h4>{this.state.dateMonth}/{this.state.dateNumber}/{this.state.dateYear}</h4>
         <img src={this.state.featuredImage} alt={this.state.title} className='post-images' />
         <p>{this.state.introText}</p>

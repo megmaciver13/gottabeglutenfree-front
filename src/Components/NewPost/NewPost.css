@@ -1,0 +1,9 @@
+.form-container {
+  margin: 5%;
+  font-family: 'Lato', sans-serif;
+}
+
+form {
+  margin-right: 30%;
+  text-align: right;
+}

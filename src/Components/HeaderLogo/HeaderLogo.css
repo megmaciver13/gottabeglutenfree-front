@@ -1,8 +1,11 @@
 .header {
+  font-family: 'Lato', sans-serif;
   text-align: center;
-  margin: 2%;
+  margin-bottom: 2%;
 }
 
-img {
+img, .tagline {
   width: 30%;
+  color: #947E4F;
+  margin: auto;
 }

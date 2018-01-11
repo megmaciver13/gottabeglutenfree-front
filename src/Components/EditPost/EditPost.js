@@ -1,26 +1,14 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-import './NewPost.css'
+import './EditPost.css'
 
-class NewPost extends Component {
+class EditPost extends Component {
   constructor (props) {
     super(props)
 
-    this.state = {
-      title: '',
-      featuredImage: '',
-      introText: '',
-      additionalImage: '',
-      yieldQuantity: '',
-      ingredients: [],
-      finalImage: '',
-      finalText: '',
-      directions: []
-    }
-
-    this.handleStateUpdate = this.handleStateUpdate.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
+    console.log(this.props)
+    this.handleDelete = this.handleDelete.bind(this)
   }
 
   handleStateUpdate (e) {
@@ -31,7 +19,7 @@ class NewPost extends Component {
 
   handleSubmit (e) {
     e.preventDefault()
-    axios.post(`http://localhost:3001/posts/${this.state.title}`, this.state)
+    axios.put(`http://localhost:3001/posts/${this.state.title}`, this.state)
       .then(response => {
         console.log(response)
         this.props.history.push(`/${this.state.title}`)
@@ -39,11 +27,20 @@ class NewPost extends Component {
       .catch(err => console.log(err))
   }
 
+  handleDelete (e) {
+    e.preventDefault()
+
+    axios.delete(`/posts/${this.props.match.params.title}`, {title: this.props.match.params.title})
+      .then(() => {
+        this.props.history.push('/')
+      })
+      .catch(err => console.log(err))
+  }
+
   render () {
-    console.log(this.state)
     return (
       <div className='form-container'>
-        <h1>New Post</h1>
+        <h1>Edit <span className='italics'>{this.props.match.params.title}</span></h1>
         <form onSubmit={e => this.handleSubmit(e)}>
           <label>
             Post Title: <input name='title' placeholder='new title' onChange={e => this.handleStateUpdate(e)} />
@@ -79,9 +76,11 @@ class NewPost extends Component {
           <br />
           <input type='submit' value='Create New Post' className='submit-button' />
         </form>
+        <br />
+        <input type='submit' value='Delete' className='submit-button' onClick={e => this.handleDelete(e)} />
       </div>
     )
   }
 }
 
-export default NewPost
+export default EditPost

@@ -9,10 +9,7 @@ class UserBar extends Component {
   render () {
     return (
       <nav className='user-bar'>
-        <span>
-          <Link to='/new' className='all-button' style={{ textDecoration: 'none', color: '#566282' }}>All Posts</Link>
-          <Link to='/edit' className='new-button' style={{ textDecoration: 'none', color: '#566282' }}>+ New Post</Link>
-        </span>
+        <Link to='/new' className='new-button' style={{ textDecoration: 'none', color: '#566282' }}>+ New Post</Link>
       </nav>
     )
   }
