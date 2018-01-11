@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import {
-  Link
-} from 'react-router-dom'
 import axios from 'axios'
 
 import './RecentPostFeed.css'
@@ -38,8 +35,8 @@ class RecentPostFeed extends Component {
   render () {
     let showPostSummaries = this.state.posts.map((post, key) => {
       return (
-        <div>
-          <PostSummary post={post} key={key} />
+        <div key={`post-${key}`}>
+          <PostSummary post={post} />
         </div>
       )
     })

@@ -26,7 +26,7 @@ class PostSummary extends Component {
         <Link to={`/posts/${this.state.title}`} style={{ textDecoration: 'none', color: 'black' }}>
           <h2>{this.state.title}</h2>
           <h4>{this.state.dateMonth}/{this.state.dateNumber}/{this.state.dateYear}</h4>
-          <img src={this.state.featuredImage} alt={this.state.title} />
+          <img src={this.state.featuredImage} alt={this.state.title} className='post-images' />
           <p>{this.state.textPreview}...</p>
           <button>Keep Reading</button>
         </Link>

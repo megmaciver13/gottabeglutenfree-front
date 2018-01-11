@@ -13,7 +13,7 @@ class NavBar extends Component {
           <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>Home</Link>
         </span> |
         <span className='about'>
-          <Link to='/'style={{ textDecoration: 'none', color: 'white' }}>About</Link>
+          <Link to='/about'style={{ textDecoration: 'none', color: 'white' }}>About Me</Link>
         </span> |
         <span className='all'>
           <Link to='/posts'style={{ textDecoration: 'none', color: 'white' }}>Recipe Archive</Link>

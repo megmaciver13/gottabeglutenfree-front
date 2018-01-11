@@ -9,6 +9,7 @@ import './FeatureArea.css'
 import RecentPostFeed from '../RecentPostFeed/RecentPostFeed'
 import PostIndex from '../PostIndex/PostIndex'
 import PostShow from '../PostShow/PostShow'
+import About from '../About/About'
 
 class FeatureArea extends Component {
   render () {
@@ -25,7 +26,11 @@ class FeatureArea extends Component {
           />
           <Route
             path='/posts/:title'
-            render={props => <PostShow {...props} />}
+            component={PostShow}
+          />
+          <Route
+            path='/about'
+            component={About}
           />
         </Switch>
       </div>

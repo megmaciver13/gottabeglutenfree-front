@@ -1,0 +1,21 @@
+ul {
+  list-style: none;
+}
+
+li {
+  padding-bottom: 1%;
+}
+
+.post-show {
+  font-family: 'Lato', sans-serif;
+  margin: 5%;
+}
+
+.post-images {
+  width: 90%;
+  margin: auto;
+}
+
+.yield {
+  font-style: italic;
+}
