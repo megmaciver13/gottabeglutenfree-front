@@ -10,6 +10,8 @@ import RecentPostFeed from '../RecentPostFeed/RecentPostFeed'
 import PostIndex from '../PostIndex/PostIndex'
 import PostShow from '../PostShow/PostShow'
 import About from '../About/About'
+import NewPost from '../NewPost/NewPost'
+import EditPost from '../EditPost/EditPost'
 
 class FeatureArea extends Component {
   render () {
@@ -31,6 +33,14 @@ class FeatureArea extends Component {
           <Route
             path='/about'
             component={About}
+          />
+          <Route
+            path='/new'
+            component={NewPost}
+          />
+          <Route
+            path='/edit'
+            component={EditPost}
           />
         </Switch>
       </div>

@@ -8,7 +8,7 @@ import './NavBar.css'
 class NavBar extends Component {
   render () {
     return (
-      <nav>
+      <nav className='nav-bar'>
         <span className='home'>
           <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>Home</Link>
         </span> |

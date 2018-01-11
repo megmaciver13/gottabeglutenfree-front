@@ -8,10 +8,10 @@ import './UserBar.css'
 class UserBar extends Component {
   render () {
     return (
-      <nav>
+      <nav className='user-bar'>
         <span>
-          <Link to='/'>All Posts</Link>
-          <Link to='/'>New Post</Link>
+          <Link to='/new' className='all-button' style={{ textDecoration: 'none', color: '#566282' }}>All Posts</Link>
+          <Link to='/edit' className='new-button' style={{ textDecoration: 'none', color: '#566282' }}>+ New Post</Link>
         </span>
       </nav>
     )
