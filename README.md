@@ -40,6 +40,22 @@ To visit the deployed version of this website, visit: http://gottabeglutenfree.s
 * [Node](https://nodejs.org/en/) - For development and dependency management
 * [Heroku](https://gottabeglutenfree.herokuapp.com/) - The back end used
 
+## Development of App
+
+Below are the planning documents I drew to plan out the development.
+
+### Wireframes
+
+![Wireframes](/public/wireframes.jpg)
+
+### Component Tree Planning
+
+![Components](/public/component-tree.jpg)
+
+## Unsolved problems
+
+I am still working on the update functionality in the EditPost component and the create functionality in the NewPost component. For both, a challenge has been the nested nature of both ingredient data and direction data in my database (and local state).
+
 ## Author
 
 Meg MacIver - find her on [GitHub](https://github.com/megmaciver13)
