@@ -16,3 +16,7 @@
 .new-button:hover {
   background-color: #86BFAE;
 }
+
+i {
+  padding-right: 5px;
+}

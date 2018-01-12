@@ -68,7 +68,7 @@ class PostShow extends Component {
     return (
       <div className='post-show'>
         <div className='edit'>
-          <Link to={`/posts/${this.state.title}/edit`} className='edit-button' style={{ textDecoration: 'none', color: '#566282' }}>Edit Post</Link>
+          <Link to={`/posts/${this.state.title}/edit`} className='edit-button' style={{ textDecoration: 'none', color: '#566282' }}><i class="fa fa-pencil" aria-hidden="true" />Edit Post</Link>
         </div>
         <h1>{this.state.title}</h1>
         <h4>{this.state.dateMonth}/{this.state.dateNumber}/{this.state.dateYear}</h4>
