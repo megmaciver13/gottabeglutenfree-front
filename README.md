@@ -2,6 +2,8 @@
 
 A full-stack website filled with approachable gluten free recipes and meal ideas, served with a side of personal commentary. (The seed data was taken from my previous WordPress blog.)
 
+![GBGF](/public/GBGF-screenshot.jpg)
+
 The repo for the back end can be found at: https://github.com/megmaciver13/gottabeglutenfree-back.
 
 ## Getting Started
