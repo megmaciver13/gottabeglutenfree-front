@@ -6,12 +6,14 @@ import {
 import './Sidebar.css'
 
 import AboutSummary from '../AboutSummary/AboutSummary'
+import RecentPostList from '../RecentPostList/RecentPostList'
 
 class Sidebar extends Component {
   render () {
     return (
       <div className='sidebar'>
         <AboutSummary />
+        <RecentPostList />
       </div>
     )
   }

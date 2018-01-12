@@ -22,7 +22,7 @@ class RecentPostFeed extends Component {
           var itemA = a.date
           var itemB = b.date
 
-          return (itemA < itemB) ? -1 : (itemA > itemB) ? 1 : 0
+          return (itemA > itemB) ? -1 : (itemA < itemB) ? 1 : 0
         })
         console.log(sortedPostsByDate)
         this.setState({
