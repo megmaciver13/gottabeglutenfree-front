@@ -27,7 +27,7 @@ class PostShow extends Component {
   }
 
   componentDidMount () {
-    axios.get(`http://localhost:3001/posts/${this.props.match.params.title}`)
+    axios.get(`https://gottabeglutenfree.herokuapp.com/posts/${this.props.match.params.title}`)
       .then(response => {
         console.log(response.data)
         var res = response.data

@@ -55,7 +55,7 @@ class NewPost extends Component {
   handleSubmit (e) {
     e.preventDefault()
     if (this.state.post.title.length >= 1) {
-      axios.post(`http://localhost:3001/posts`, this.state.post)
+      axios.post(`https://gottabeglutenfree.herokuapp.com/posts`, this.state.post)
         .then(response => {
           console.log(response)
           this.props.history.push(`/posts/${this.state.post.title}`)

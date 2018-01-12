@@ -15,7 +15,7 @@ class RecentPostFeed extends Component {
   }
 
   componentDidMount () {
-    axios.get('http://localhost:3001/posts')
+    axios.get('https://gottabeglutenfree.herokuapp.com/posts')
       .then(response => {
         console.log(response.data)
         let sortedPostsByDate = response.data.sort((a, b) => {

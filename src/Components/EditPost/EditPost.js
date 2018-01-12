@@ -32,7 +32,7 @@ class EditPost extends Component {
   }
 
   componentDidMount () {
-    axios.get(`http://localhost:3001/posts/${this.props.match.params.title}`)
+    axios.get(`https://gottabeglutenfree.herokuapp.com/posts/${this.props.match.params.title}`)
       .then(response => {
         console.log(response.data)
         var res = response.data
@@ -83,7 +83,7 @@ class EditPost extends Component {
 
   handleSubmit (e) {
     e.preventDefault()
-    axios.put(`http://localhost:3001/posts/${this.props.match.params.title}`, this.state)
+    axios.put(`https://gottabeglutenfree.herokuapp.com/posts/${this.props.match.params.title}`, this.state)
       .then(response => {
         console.log(response)
         this.props.history.push(`/posts/${this.state.title}`)
@@ -94,7 +94,7 @@ class EditPost extends Component {
   handleDelete (e) {
     e.preventDefault()
 
-    axios.delete(`http://localhost:3001/posts/${this.props.match.params.title}`, {title: this.props.match.params.title})
+    axios.delete(`https://gottabeglutenfree.herokuapp.com/posts/${this.props.match.params.title}`, {title: this.props.match.params.title})
       .then(() => {
         this.props.history.push('/')
       })

@@ -16,7 +16,7 @@ class PostIndex extends Component {
   }
 
   componentDidMount () {
-    axios.get('http://localhost:3001/posts')
+    axios.get('https://gottabeglutenfree.herokuapp.com/posts')
       .then(response => {
         console.log(response.data)
         let sortedPostsAlphabetically = response.data.sort((a, b) => {
