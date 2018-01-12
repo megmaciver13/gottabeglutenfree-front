@@ -1,6 +1,8 @@
 # Gottabeglutenfree (front end)
 
-A blog filled with approachable gluten free recipes and meal ideas, served with a side of personal commentary. (The seed data was taken from my previous WordPress blog.)
+A full-stack website filled with approachable gluten free recipes and meal ideas, served with a side of personal commentary. (The seed data was taken from my previous WordPress blog.)
+
+The repo for the back end can be found at: https://github.com/megmaciver13/gottabeglutenfree-back.
 
 ## Getting Started
 
@@ -10,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 You will need node installed on your local system.
 
-Ensure that the API for the back end is working at: https://gottabeglutenfree.herokuapp.com/. The repo for the back end can be found at: https://github.com/megmaciver13/gottabeglutenfree-back.
+Ensure that the API for the back end is working at: https://gottabeglutenfree.herokuapp.com/.
 
 ### Installing
 
@@ -30,7 +32,7 @@ npm start
 
 ## Deployed Website
 
-To visit the deployed version of this website, visit: http://gottabeglutenfree.surge.sh/
+To visit the deployed version of this website, visit: http://gottabeglutenfree.surge.sh/.
 
 ## Built With
 
@@ -40,4 +42,4 @@ To visit the deployed version of this website, visit: http://gottabeglutenfree.s
 
 ## Author
 
-Meg MacIver
+Meg MacIver - find her on [GitHub](https://github.com/megmaciver13)
