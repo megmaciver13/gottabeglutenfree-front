@@ -7,3 +7,7 @@ form {
   margin-right: 30%;
   text-align: right;
 }
+
+label {
+  margin-top: 4%;
+}
